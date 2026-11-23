@@ -1,0 +1,27 @@
+{
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "publication_date": "2026-11-23",
+  "title": "DaVinciA+ Framework (v1.0): Constitutional AI Governance, Typed-Action Authority Gating & Verifiable Audit Architecture",
+  "creators": [
+    {
+      "name": "Ward, David Patrick",
+      "affiliation": "A.Ward Publications, Kinsale, Co. Cork, Ireland"
+    }
+  ],
+  "description": "Official public specification (AWP-STD-DAVINCIA-PLUS-2026-v1.0) defining the DaVinciA+ v1.0 constitutional AI governance architecture, typed-action execution contract, fail-closed agent isolation invariant, three-tier conformance model, and regulatory crosswalks to EU AI Act (Regulation (EU) 2024/1689), ISO/IEC 42001:2023, NIST AI RMF 1.0, ISPE GAMP 5, and FDA 21 CFR Part 11. Published and 100% owned by A.Ward Publications (CRO RBN 739404; Nielsen ISBN Prefix 978-1-918501).",
+  "access_right": "open",
+  "license": "cc-by-nd-4.0",
+  "imprint_publisher": "A.Ward Publications",
+  "imprint_place": "Kinsale, Co. Cork, Ireland",
+  "keywords": [
+    "DaVinciA+",
+    "AI Governance",
+    "EU AI Act",
+    "Human-in-the-Loop",
+    "Typed Action Envelope",
+    "Cryptographic Provenance",
+    "A.Ward Publications"
+  ],
+  "notes": "Copyright (c) 2026 A.Ward Publications. DAVINCIA+ is a trademark of A.Ward Publications. All patent rights and proprietary engine implementations expressly reserved."
+}

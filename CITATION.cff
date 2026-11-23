@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you reference or implement the DaVinciA+ public governance standard, please cite it using the metadata below."
+title: "DaVinciA+ Framework (v1.0): Constitutional AI Governance, Typed-Action Authority Gating & Verifiable Audit Architecture"
+version: "1.0.0"
+date-released: "2026-11-23"
+identifiers:
+  - type: other
+    value: "AWP-STD-DAVINCIA-PLUS-2026-v1.0"
+    description: "A.Ward Publications Official Standard Document ID"
+authors:
+  - family-names: "Ward"
+    given-names: "David Patrick"
+    affiliation: "A.Ward Publications (Kinsale, Co. Cork, Ireland)"
+publisher:
+  name: "A.Ward Publications"
+  city: "Kinsale, Co. Cork"
+  country: "IE"
+keywords:
+  - "DaVinciA+"
+  - "AI Governance"
+  - "EU AI Act Article 14"
+  - "Typed Action Architecture"
+  - "Cryptographic Audit Trail"
+  - "ISO/IEC 42001"
+  - "GAMP 5"
+license: "CC-BY-ND-4.0"
+copyright: "Copyright (c) 2026 A.Ward Publications (CRO RBN 739404). All intellectual property rights reserved."

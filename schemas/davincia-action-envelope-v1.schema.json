@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awardpublishinghouse.com/schemas/davincia-action-envelope-v1.schema.json",
+  "title": "DaVinciA+ Typed Action Envelope (v1.0)",
+  "description": "Normative public interface contract for DaVinciA+ v1.0 governed actions. Copyright (c) 2026 A.Ward Publications.",
+  "type": "object",
+  "required": [
+    "schema",
+    "action_id",
+    "action_type",
+    "actor_kind",
+    "actor_id",
+    "input_mode",
+    "conformance_tier",
+    "target_ids",
+    "parameters",
+    "precondition_hash",
+    "governance_state",
+    "created_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "davincia.action.v1"
+    },
+    "action_id": {
+      "type": "string",
+      "pattern": "^ACT-[A-Z0-9-]+$"
+    },
+    "action_type": {
+      "type": "string",
+      "enum": [
+        "createNode",
+        "moveNode",
+        "resizeNode",
+        "styleNode",
+        "setText",
+        "attachEvidence",
+        "requestAgentAction",
+        "approveAgentAction",
+        "rejectAgentAction",
+        "revertAction"
+      ]
+    },
+    "proposed_operation": {
+      "type": "string"
+    },
+    "actor_kind": {
+      "type": "string",
+      "enum": ["human", "agent", "system_policy"]
+    },
+    "actor_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "input_mode": {
+      "type": "string",
+      "enum": ["DIRECT_MANIPULATION", "VOICE", "PROMPT", "AGENT_PROPOSAL"]
+    },
+    "conformance_tier": {
+      "type": "string",
+      "enum": ["DVA-L1", "DVA-L2", "DVA-L3"]
+    },
+    "target_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "precondition_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "governance_state": {
+      "type": "string",
+      "enum": ["PROPOSED", "APPROVED", "REJECTED", "APPLIED", "REVERTED", "FAILED"]
+    },
+    "policy_decision_id": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
